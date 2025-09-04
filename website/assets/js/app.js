@@ -45,3 +45,10 @@ const cardTemplate = ({title, year, poster, description}) => {
         
     `
 }
+
+// add fade-out animation to all card elements
+const fadeOutElements = () => {
+    document.querySelectorAll('.card-element').forEach(el => {
+        el.classList.add("fade-out");
+    })
+}
