@@ -93,3 +93,16 @@ const getMovie =  async (search) => {
 // initialize app with a default movie
 getMovie("inception")
 
+// listen for Enter key to trigger a movie search
+document.addEventListener('keydown', (e) => {
+    if (e.key === "Enter"){
+        const searchParam = $searchInput.value;
+
+        // prevent search if input is empty or same as the last searched movie
+        if (searchParam.trim() != "" && searchParam.toLocaleLowerCase() !== lastSearch.toLocaleLowerCase()){
+            lastSearch = searchParam
+            
+            getMovie(searchParam);
+        } 
+    }
+})
