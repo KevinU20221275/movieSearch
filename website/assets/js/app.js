@@ -89,3 +89,7 @@ const getMovie =  async (search) => {
         renderMovie(DEFAULT_RESPONSES.error)
     }
 }
+
+// initialize app with a default movie
+getMovie("inception")
+
