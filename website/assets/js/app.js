@@ -52,3 +52,8 @@ const fadeOutElements = () => {
         el.classList.add("fade-out");
     })
 }
+
+// render a movie card into the DOM
+const renderMovie = (movie) => {
+    $card.innerHTML = cardTemplate(movie);
+}
