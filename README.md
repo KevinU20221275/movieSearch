@@ -86,14 +86,14 @@ movieSearch (root) /
 └── website/           # Frontend (served by Express)
     ├── index.html     # Main HTML page
     └── assets/
-    │   ├── css/       # Stylesheets
-    │   ├── js/        # JavaScript code (app.js, default.js)
-    │   ├── img/       # Default images (fallbacks, error images)
-    │   ├── icons/     # Icons
-    │   └── mocks/     # Mock API responses (for testing)
-    │
-    └── docs/
-        └── screenshots/   # Images used for README and documentation
+        ├── css/       # Stylesheets
+        ├── js/        # JavaScript code (app.js, default.js)
+        ├── img/       # Default images (fallbacks, error images)
+        ├── icons/     # Icons
+        └── mocks/     # Mock API responses (for testing)
+│
+└── docs/
+    └── screenshots/   # Images used for README and documentation
 ```
 
 ## 📸 Screenshots
@@ -101,22 +101,22 @@ movieSearch (root) /
 ### Default load
 App opens with the initial movie displayed.
 
-![Default Movie](docs/screenshots/default.png)
+![Default Movie](/docs/screenshots/default.png)
 
 ### Movie Found
 Successful search showing movie details.
 
-![Movie Found](docs/screenshots/success.png)
+![Movie Found](/docs/screenshots/success.png)
 
 ### Movie Not Found
 Shows placeholder when no results are found.
 
-![Not Found](docs/screenshots/not-found.png)
+![Not Found](/docs/screenshots/not-found.png)
 
 ### Error
 Displayed when the API request fails.
 
-![Error](docs/screenshots/error.png)
+![Error](/docs/screenshots/error.png)
 
 ## 📝 Notes
 - The app initializes with "Inception" as the default movie.
