@@ -19,3 +19,29 @@ const formatMovieData = (data) => {
         description: data.Plot !== NULL_FIELD_RESPONSE ? data.Plot : data.Actors
     }
 }
+
+
+// generate HTML template for a movie card
+const cardTemplate = ({title, year, poster, description}) => {
+    return `
+        <div class="movie-card__overlay">
+            <picture>
+                <img src="${poster}"  alt="" class="movie-card__overlay card-element fade-in">
+            </picture>
+        </div>
+
+        <article class="movie-card__header flex-col">
+            <h2 class="movie-card__title card-element fade-in">${title}</h2>
+            <h2 class="movie-card__year card-element fade-in">${year}</h2> 
+            <picture>
+                <img src="${poster}" alt="poster of the movie ${title}" class="movie-card__poster card-element fade-in">
+            </picture> 
+        </article>
+        <article>
+            <p class="movie-card__description card-element fade-in grow-up">
+                ${description}
+            </p>
+        </article>
+        
+    `
+}
